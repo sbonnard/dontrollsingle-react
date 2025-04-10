@@ -1,11 +1,11 @@
-# Lancement d'un projet React
+# New React Project
 
-## Initialisation du projet en React
+## Init React Project
 ```sh
 npm create vite@latest mon-projet -- --template react-ts
 ```
 
-## Installation de react-router
+## Install react-router
 ```sh
 npm install react-router-dom
 ```
