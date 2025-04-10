@@ -1,0 +1,12 @@
+// style.scss
+@use 'var';
+@use 'fonts';
+@use 'root';
+@use 'reset';
+@use 'body';
+
+// Components
+@use 'components/container';
+@use 'components/effect';
+@use 'components/hit';
+@use 'components/utils';
