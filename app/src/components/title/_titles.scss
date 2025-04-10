@@ -1,0 +1,13 @@
+.ttl {
+    font-family: 'english';
+    font-size: 1.5rem;
+
+    &--main {
+        font-size: 2rem;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            text-shadow: 0 0 10px #08ceff, 0 0 12px #08ceff;
+        }
+    }
+}

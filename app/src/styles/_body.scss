@@ -1,0 +1,13 @@
+// BODY //
+@use 'var';
+
+body {
+  font-family: 'english';
+  font-size: 1rem;
+  background-color: $black90;
+  background-image: url(/img/background.webp);
+  background-position: top, left;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $white;
+}
