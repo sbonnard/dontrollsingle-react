@@ -1,10 +1,11 @@
-@use '../../fonts' as font;
+@use '../../styles/var' as var;
+@use '../../styles/fonts' as font;
 
 .dice {
     width: 14rem;
 
     &:hover {
-        filter: drop-shadow(0 0 10px $electric, 0 0 12px $electric);
+        filter: drop-shadow(0 0 10px var.$electric, 0 0 12px var.$electric);
     }
 
     &--100 {
@@ -26,7 +27,7 @@
 
     &__banner {
         position: absolute;
-        background-color: $black90;
+        background-color: var.$black90;
         width: 100vw;
         padding: 1rem;
         text-align: center;
@@ -54,15 +55,15 @@
     }
 
     &--crit {
-        color: $gold;
+        color: var.$gold;
     }
 
     &--fail {
-        color: $zinzolin;
+        color: var.$zinzolin;
     }
 
     &--normal {
-        color: $white;
+        color: var.$white;
     }
 }
 

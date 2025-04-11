@@ -60,7 +60,7 @@ const Dice = ({ dice }: DiceProps) => {
             </h2>
 
             <button id={`dice${dice}`} data-dice={dice} onClick={rollDice}>
-                <img className={`dice dice--${dice} ${isRolling ? 'dice__rolling' : ''}`} src={`../assets/img/${dice}.png`} alt={`Dé ${dice} de JDR`} />
+                <img className={`dice dice--${dice} ${isRolling ? 'dice__rolling' : ''}`} src={`src/assets/img/${dice}.png`} alt={`Dé ${dice} de JDR`} />
             </button>
         </section>
     );

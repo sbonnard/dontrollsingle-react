@@ -1,13 +1,13 @@
 // BODY //
-@use 'var';
+@use 'var' as var;
 
 body {
   font-family: 'english';
   font-size: 1rem;
-  background-color: $black90;
-  background-image: url(/img/background.webp);
+  background-color: var.$black90;
+  background-image: url(../assets/img/background.webp);
   background-position: top, left;
   background-size: cover;
   background-attachment: fixed;
-  color: $white;
+  color: var.$white;
 }

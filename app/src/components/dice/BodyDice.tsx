@@ -42,7 +42,7 @@ const BodyDice = () => {
             </h2>
 
             <button id="bodyDice" data-dice="body" onClick={rollBodyDice}>
-                <img className={`dice dice--body ${isRolling ? 'dice__rolling' : ''}`} src="../assets/img/body.png" alt="Dé localisation du corps" />
+                <img className={`dice dice--body ${isRolling ? 'dice__rolling' : ''}`} src="src/assets/img/body.png" alt="Dé localisation du corps" />
             </button>
         </section>
     );

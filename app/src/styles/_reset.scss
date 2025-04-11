@@ -1,5 +1,5 @@
 /* RESET  */
-@use 'var';
+@use 'var' as var;
 
 * {
     box-sizing: border-box;
@@ -32,13 +32,13 @@ input[type="checkbox"] {
 
 input[type="submit"] {
     cursor: pointer;
-    background-color: $white;
+    background-color: var.$white;
 }
 
 input[type="color"] {
     appearance: none;
     cursor: pointer;
-    background-color: $white;
+    background-color: var.$white;
 }
 
 main {
