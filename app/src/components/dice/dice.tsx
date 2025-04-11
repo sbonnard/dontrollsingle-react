@@ -45,14 +45,23 @@ const Dice = ({ dice }: DiceProps) => {
             setCritType(null);
         }
 
+        // Affichage de la bannière pendant 1.5s
         setTimeout(() => setIsRolling(false), 1500);
-        setTimeout(() => setResult(null), 5000);
+
+        // Cacher le résultat et la bannière après 5s
+        setTimeout(() => {
+            setResult(null);
+        }, 5000);
     };
 
     return (
         <section className="dice__section" aria-labelledby={`ttl${dice}`}>
-            <div className={`dice__banner ${critType ? `dice--${critType}` : ''} ${result !== null ? 'dice__banner--visible' : ''}`} data-banner={dice} id={`banner${dice}`}>
-                {result ?? dice}
+            <div
+                className={`dice__banner ${critType ? `dice--${critType}` : ''} ${result !== null ? 'dice__banner--visible' : ''}`}
+                data-banner={dice}
+                id={`banner${dice}`}
+            >
+                {result !== null ? result : ''}
             </div>
 
             <h2 className="ttl dice__word" id={`ttl${dice}`}>
