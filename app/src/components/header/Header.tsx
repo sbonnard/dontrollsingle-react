@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './_header.scss';
 import './_nav.scss';
 import './_hamburger.scss';
+import '../../styles/main.scss';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,13 +19,8 @@ const Header = () => {
             </Link>
 
             <div className="hamburger">
-                <button
-                    id="hamburger-menu-icon"
-                    onClick={toggleMenu}
-                    className={menuOpen ? 'close' : ''}
-                    aria-label="Ouvrir/fermer le menu"
-                >
-                    <img src="assets/img/hamburger.svg" alt="Menu Hamburger" />
+                <button id="hamburger-menu-icon" onClick={toggleMenu} className={menuOpen ? 'close' : ''} aria-label="Ouvrir/fermer le menu">
+                    <img src="../../assets/img/hamburger.svg" alt="Menu Hamburger" />
                 </button>
             </div>
 
@@ -34,10 +30,9 @@ const Header = () => {
                 aria-label="Navigation principale du site"
             >
                 <ul className="nav" id="nav-list">
-                    {/* Tu peux décommenter et ajuster tes liens ici */}
-                    {/* <li className="nav__itm">
+                    <li className="nav__itm">
                         <Link to="/" className="nav__lnk">Accueil</Link>
-                    </li> */}
+                    </li>
                 </ul>
             </nav>
         </header>

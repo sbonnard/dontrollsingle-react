@@ -12,11 +12,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="container">
+      <main className="container container--grid">
+        <BodyDice />
         {diceValues.map((dice) => (
           <Dice key={dice} dice={dice} />
         ))}
-        <BodyDice />
       </main>
       <Footer />
     </>
