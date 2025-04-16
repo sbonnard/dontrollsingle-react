@@ -33,6 +33,9 @@ const Header = () => {
                     <li className="nav__itm">
                         <Link to="/" className="nav__lnk">Accueil</Link>
                     </li>
+                    <li className="nav__itm">
+                        <Link to="/worldmap" className="nav__lnk">Carte du Monde</Link>
+                    </li>
                 </ul>
             </nav>
         </header>

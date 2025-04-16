@@ -8,7 +8,7 @@ import './styles/main.scss';
 
 const diceValues = [100, 20, 12, 10, 8, 6, 4];
 
-const App = () => {
+const AppDice = () => {
   return (
     <>
       <Header />
@@ -23,4 +23,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AppDice;
