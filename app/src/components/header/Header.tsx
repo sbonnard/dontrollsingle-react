@@ -24,11 +24,7 @@ const Header = () => {
                 </button>
             </div>
 
-            <nav
-                className={`nav hamburger__menu ${menuOpen ? 'overlay' : ''}`}
-                id="menu"
-                aria-label="Navigation principale du site"
-            >
+            <nav className={`nav hamburger__menu ${menuOpen ? 'overlay' : ''}`} id="menu" aria-label="Navigation principale du site">
                 <ul className="nav" id="nav-list">
                     <li className="nav__itm">
                         <Link to="/" className="nav__lnk">Accueil</Link>
