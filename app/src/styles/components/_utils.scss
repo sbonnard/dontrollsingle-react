@@ -1,5 +1,62 @@
-@use '../fonts' as font;
+@use '../var' as var;
 
-.number {
-    font-family: 'messiri';
+/* Utils */
+
+.users-counter {
+    font-size: 1.25rem;
+    color: var.$white;
+    border: 2px solid var.$primary;
+    padding: 0.5rem;
+
+    &__img {
+        padding-top: 1.5rem;
+        border-radius: 100%;
+    }
+}
+
+.txt {
+    &--bigger {
+        font-size: 1.25rem;
+        color: var.$white;
+    }
+
+    &--primary {
+        color: var.$primary;
+    }
+}
+
+.page-content {
+    // background-image: url(/img/background-img-clearer.webp);
+    background-attachment: fixed;
+    letter-spacing: 0.10rem;
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: 768px) {
+        & {
+            margin: 1rem;
+        }
+}
+}
+
+.content-position {
+    margin-top: 5.2rem;
+}
+
+.show {
+    display: block;
+}
+
+.separator {
+
+    @media screen and (min-width: 768px) {
+        &--horizontal {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &--vertical {
+            display: none;
+        }
+    }
 }

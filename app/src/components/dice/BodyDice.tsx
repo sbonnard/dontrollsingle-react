@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './_dice.scss';
+import '../../styles/components/_dice.scss';
 import '../../styles/main.scss';
 
 const bodyParts = [

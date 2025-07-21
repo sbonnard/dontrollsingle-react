@@ -1,0 +1,57 @@
+@use '../var' as var;
+
+/* Inputs */
+
+.input {
+    appearance: none;
+    width: 20.5rem;
+    font-size: 1.25rem;
+    background-color: var.$white;
+    padding: 1rem;
+    cursor: pointer;
+
+    &__label {
+        padding: 0 0.75rem 0.75rem 0.75rem;
+    }
+
+    &__required {
+        color: var.$electric;
+    }
+
+    &__required--txt {
+        font-size: 0.75rem;
+        padding: 1.5rem;
+    }
+
+    &::placeholder {
+        font-size: 1.25rem;
+        color: var.$light-grey;
+        line-height: 0;
+    }
+
+    &__text-area {
+        height: 15rem;
+    }
+
+    &__text-area::placeholder {
+        width: 100%;
+    }
+    
+    &:focus-visible {
+        outline-color: var.$electric;
+    }
+
+    &--password {
+        position: relative;
+    }
+
+    @media screen and (min-width: 768px) {
+        & {
+            width: 23.75rem;
+        }
+
+        &__select {
+            width: 30rem;
+        }
+    }
+}

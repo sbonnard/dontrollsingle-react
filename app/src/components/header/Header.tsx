@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './_header.scss';
-import './_nav.scss';
-import './_hamburger.scss';
+import '../../styles/components/_header.scss';
+import '../../styles/components/_nav.scss';
+import '../../styles/components/_hamburger.scss';
 import '../../styles/main.scss';
 
 const Header = () => {

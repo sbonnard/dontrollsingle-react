@@ -1,0 +1,18 @@
+@use '../var' as var;
+
+/* Links */
+
+.lnk {
+    &:hover {
+        color: var.$electric;
+    }
+
+    &--underlined {
+        border-bottom: 1px solid var.$white;
+    }
+
+    &--underlined:hover {
+        color: var.$electric;
+        border-color: var.$electric;
+    }
+}

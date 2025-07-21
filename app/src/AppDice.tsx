@@ -12,7 +12,7 @@ const AppDice = () => {
   return (
     <>
       <Header />
-      <main className="container container--grid">
+      <main className="container--dice container--dice--grid">
         <BodyDice />
         {diceValues.map((dice) => (
           <Dice key={dice} dice={dice} />

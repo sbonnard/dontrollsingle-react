@@ -1,13 +1,37 @@
-// style.scss
-@use 'var';
-@use 'fonts';
-@use 'root';
-@use 'reset';
-@use 'body';
+@use "var";
+@use "breakpoints";
+@use "mixins";
+@use "fonts";
+@use "root";
+@use "reset";
+@use "body";
 
-// Components
-@use 'components/container';
+// COMPONENTS //
+
+@use "./components/utils";
+@use "./components/container";
+@use "./components/buttons";
+@use "./components/concept";
+@use "./components/connection-bar";
+@use "./components/favourites-list";
+@use "./components/filter";
+@use "./components/footer";
+@use "./components/form";
+@use "./components/friends-suggestions";
+@use "./components/hamburger";
+@use "./components/hero-banner";
+@use "./components/header";
+@use "./components/input";
+@use "./components/links";
+@use "./components/logo";
+@use "./components/nav";
+@use "./components/party";
+@use "./components/rolist-items";
+@use "./components/suggestions";
+@use "./components/swiper";
+@use "./components/titles";
+@use "./components/notifs";
+@use "./components/larp";
 @use 'components/effect';
+@use 'components/dice';
 @use 'components/hit';
-@use 'components/utils';
-@use 'components/titles';
