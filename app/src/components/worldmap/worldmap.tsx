@@ -4,7 +4,10 @@ import '../../styles/main.scss';
 
 const WorldMap = () => {
     return (
-        <img className="worldmap" src="../../assets/img/worldmap.webp" alt="Carte du monde du JDR" />
+        <>
+            <h1>Truc</h1>
+            <img className="worldmap" src="../../assets/img/worldmap.webp" alt="Carte du monde du JDR" />
+        </>
     );
 };
 
